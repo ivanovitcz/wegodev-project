@@ -1,0 +1,121 @@
+.navbar-white {
+  background-color: #fff;
+  color: #fff !important;
+}
+
+.nav-border-bottom {
+  border-bottom: 2px solid #dee2e6;
+}
+.sub-spacing {
+  letter-spacing: 5px;
+}
+.text-black {
+  color: #000 !important;
+}
+.nav-item:hover {
+  border-bottom: 3px solid #03c4a1;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid #03c4a1;
+}
+
+.jobs {
+  opacity: 0.5;
+}
+
+.jobs:hover {
+  opacity: 1;
+}
+
+.jobs.active {
+  opacity: 1;
+}
+
+
+.px-6 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title-carousel {
+  font-weight: bolder;
+}
+
+.carousel-caption {
+  left: 10%;
+  right: 10%;
+  bottom:5%;
+}
+
+.bg-blue {
+  background-image: linear-gradient(to right, #4facfe 0%, #2C8BFF 100%);
+  color: #fff;
+}
+
+.badge-color-2 {
+  background-color: #726a95;
+}
+
+.badge-color-3 {
+  background-color: #f0a500;
+}
+
+.badge-circle {
+  opacity: 0.8;
+  font-size: .875rem;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-title {
+  display: inline-block;
+  position: relative;
+}
+
+.border-title:after {
+  position: absolute;
+  content: '';
+  border-bottom: 5px solid #03c4a1;
+  width: 70%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  left: 50%;
+}
+
+.footer {
+  background-color: #f4f5f7;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.btn-more {
+  background-color: #03c4a1;
+  color: #fff;
+  border-radius: 0;
+}
+
+.partner {
+  border: 0;
+}
+
+.bootstrap-logo {
+  max-width: 75px;
+}
