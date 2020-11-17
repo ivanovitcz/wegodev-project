@@ -194,6 +194,10 @@
   border-radius: 0;
 }
 
+.navbar-toggler {
+  border: 0;
+}
+
 .btn-download {
   background-color: #03c4a1;
   color: #fff;
