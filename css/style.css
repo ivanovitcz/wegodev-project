@@ -138,6 +138,21 @@
   left: 50%;
 }
 
+.border-porto {
+  display: inline-block;
+  position: relative;
+}
+
+.border-porto:after {
+  position: absolute;
+  content: '';
+  border-bottom: 5px solid #fff;
+  width: 120%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  left: 50%;
+}
+
 .footer {
   background-color: #f4f5f7;
 }
@@ -177,6 +192,19 @@
   background-color: #03c4a1;
   color: #fff;
   border-radius: 0;
+}
+
+.btn-download {
+  background-color: #03c4a1;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-demo {
+  background-color: #fff;
+  color: #03c4a1;
+  border-radius: 0;
+  border: 1px solid #03c4a1;
 }
 
 .text-title {
