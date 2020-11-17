@@ -43,7 +43,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10 mx-auto text-center my-2">
-              <div class="card about-card contact">
+              <div class="card about-card contact shadow">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="card contact-left text-left bg-blue px-5 py-5">
@@ -95,7 +95,7 @@
                           <label class="font-weight-bold">Message</label>
                           <textarea class="form-control form-contact" id="" rows="4" placeholder="Your Message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block mt-5 p-2"><strong>Send Message</strong></button>
+                        <button type="submit" class="btn btn-blue btn-block mt-5 p-2"><strong>Send Message</strong></button>
                       </form>
                     </div>
                   </div>
@@ -129,15 +129,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <script>
-      document.addEventListener('scroll', function (e) {
-        var top  = window.pageYOffset + window.innerHeight,
-            isVisible = top > document.querySelector('.intro').offsetTop;
-
-        if (isVisible) {
-          document.getElementById('testing').classList.add('animate__slideInUp');
-        }
-      });
-    </script>
   </body>
 </html>

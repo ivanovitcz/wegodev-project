@@ -63,6 +63,12 @@
   color: #fff;
 }
 
+.btn-blue {
+  background-image: linear-gradient(to right, #4facfe 0%, #2C8BFF 100%);
+  color: #fff;
+  border:0;
+}
+
 .bg-green {
   background-color: #03c4a1;
   color: #fff;
@@ -138,8 +144,18 @@
 
 .about-card {
   border-radius: 0;
+  -webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1);
 }
 
+.work {
+  border: 0;
+  border-radius: 20px;  
+  -webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.1  );
+}
 
 .contact {
   border: 0;
@@ -147,6 +163,7 @@
 }
 
 .contact-left {
+  
   border: 0;
   border-radius: 20px;  
 }
@@ -177,5 +194,5 @@
 .form-contact {
   border: 0px;
   border-radius: 0;
-  border-bottom: 1px solid #2C8BFF;
+  border-bottom: 1px solid #4facfe;
 }
