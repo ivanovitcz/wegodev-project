@@ -45,13 +45,13 @@
           <div class="carousel-item active" style="background-image: url('img/slide1.jpg')">
             <div class="carousel-caption px-0 d-block text-left mb-3 text-light">
               <span class="text-uppercase sub-spacing"> <strong>The Best Software Solution</strong></span>
-              <h2 class="display-4 title-carousel mt-3">Help Your</h2>
-              <h2 class="display-4 title-carousel">Business Growth Up</h2>
+              <h2 class="display-4 title-carousel mt-3 ">Help Your</h2>
+              <h2 class="display-4 title-carousel ">Business Growth Up</h2>
               <p class="lead mb-3">You’ve got questions, we’ve got answers.</p>
               <div class="row justify-content-end mt-5 mt-md-2">
-                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs"><small><strong>Software House</strong></small></div>
-                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs"><small><strong>Business Consultant</strong></small></div>
-                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs"><small><strong>Digital Marketing</strong></small></div>
+                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs animate__animated animate__slideInUp" ><small><strong>Software House</strong></small></div>
+                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs animate__animated animate__slideInUp" ><small><strong>Business Consultant</strong></small></div>
+                <div class="col-sm-12 col-md-2 text-uppercase sub-spacing text-center text-md-right jobs animate__animated animate__slideInUp" ><small><strong>Digital Marketing</strong></small></div>
               </div>
             </div>
           </div>
@@ -62,16 +62,16 @@
     
     <div class="wrapper">
       <div class="section my-5 py-5 intro">
-        <div class="container animate__animated" id="testing">
+        <div class="container">
           <div class="row">
-            <div class="col-md-8 mx-auto text-center my-5">
+            <div class="col-md-8 mx-auto text-center my-5  animate__animated" id="intro-2">
               <h1 class="border-title">Simple Solutions for Complex Problems</h1>
               <p class="lead my-5 ">
                 Start introducing your business to the world, what you need is a business solution that brings your business forward. And ImaginerCorp is the business solution you are looking for
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row animate__animated intro-3" id="intro-3">
             <div class="col-md-4">
               <div class="info">
                 <h6 class="text-uppercase text-primary">Analyze Problems</h6>
@@ -104,8 +104,8 @@
               <div class="pr-md-5">
                 <h3 class="mb-4">What Can We Do For You?</h3>
                 <p class="font-weight-light" >We provide various solutions to your various problems, especially problems with your business that prevent your business from growing further.</p>
-                <ul class="list-unstyled mt-5">
-                  <li class="py-2">
+                <ul class="list-unstyled mt-5 ">
+                  <li class="py-2 animate__animated  intro-4" id="intro-4-1">
                     <div class="d-flex align-items-center">
                       <div>
                         <div class="badge badge-circle badge-success mr-4 p-2">
@@ -117,7 +117,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="py-2">
+                  <li class="py-2 animate__animated" id="intro-4-2">
                     <div class="d-flex align-items-center">
                       <div>
                         <div class="badge badge-circle badge-danger mr-4 p-2">
@@ -129,7 +129,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="py-2">
+                  <li class="py-2 animate__animated" id="intro-4-3">
                     <div class="d-flex align-items-center">
                       <div>
                         <div class="badge badge-circle badge-color-2 mr-4 p-2">
@@ -141,7 +141,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="py-2">
+                  <li class="py-2 animate__animated" id="intro-4-4">
                     <div class="d-flex align-items-center">
                       <div>
                         <div class="badge badge-circle badge-color-3 mr-4 p-2">
@@ -259,14 +259,35 @@
 
 
     <script>
+      document.documentElement.style.setProperty('--animate-duration', '2s');
+
       document.addEventListener('scroll', function (e) {
         var top  = window.pageYOffset + window.innerHeight,
-            isVisible = top > document.querySelector('.intro').offsetTop;
+        isVisible = top > document.querySelector('.intro').offsetTop;
+
+        var top2  = window.pageYOffset + window.innerHeight,
+        isVisible2 = top2 > document.querySelector('.intro-3').offsetTop;
+
+        var top4  = window.pageYOffset + window.innerHeight,
+        isVisible4 = top4 > document.querySelector('.intro-4').offsetTop;
 
         if (isVisible) {
-          document.getElementById('testing').classList.add('animate__slideInUp');
+          document.getElementById('intro-2').classList.add('animate__slideInUp');
+        }
+
+        if (isVisible2) {
+          document.getElementById('intro-3').classList.add('animate__slideInUp');
+        }
+
+        if (isVisible4) {
+          document.getElementById('intro-4-1').classList.add('animate__slideInLeft');
+          document.getElementById('intro-4-2').classList.add('animate__slideInLeft');
+          document.getElementById('intro-4-3').classList.add('animate__slideInLeft');
+          document.getElementById('intro-4-4').classList.add('animate__slideInLeft');
         }
       });
+      
+
     </script>
   </body>
 </html>

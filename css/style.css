@@ -136,20 +136,23 @@
   background-color: #f4f5f7;
 }
 
-.card {
+.about-card {
   border-radius: 0;
-  border: 0;
 }
 
+
 .contact {
+  border: 0;
   border-radius: 20px;
 }
 
 .contact-left {
+  border: 0;
   border-radius: 20px;  
 }
 
 .contact-right {
+  border: 0;
   border-radius: 20px;  
 }
 
