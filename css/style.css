@@ -138,6 +138,19 @@
 
 .card {
   border-radius: 0;
+  border: 0;
+}
+
+.contact {
+  border-radius: 20px;
+}
+
+.contact-left {
+  border-radius: 20px;  
+}
+
+.contact-right {
+  border-radius: 20px;  
 }
 
 .btn-more {
@@ -156,4 +169,10 @@
 
 .bootstrap-logo {
   max-width: 75px;
+}
+
+.form-contact {
+  border: 0px;
+  border-radius: 0;
+  border-bottom: 1px solid #2C8BFF;
 }
