@@ -147,7 +147,7 @@
   position: absolute;
   content: '';
   border-bottom: 5px solid #fff;
-  width: 120%;
+  width: 105%;
   transform: translateX(-50%);
   bottom: -10px;
   left: 50%;
