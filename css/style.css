@@ -63,6 +63,11 @@
   color: #fff;
 }
 
+.bg-green {
+  background-color: #03c4a1;
+  color: #fff;
+}
+
 .badge-color-2 {
   background-color: #726a95;
 }
@@ -97,6 +102,35 @@
   bottom: -20px;
   left: 50%;
 }
+.border-about-2 {
+  display: inline-block;
+  position: relative;
+}
+
+.border-about-2:after {
+  position: absolute;
+  content: '';
+  border-bottom: 5px solid #03c4a1;
+  width: 150%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  left: 50%;
+}
+
+.border-about {
+  display: inline-block;
+  position: relative;
+}
+
+.border-about:after {
+  position: absolute;
+  content: '';
+  border-bottom: 5px solid #fff;
+  width: 150%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  left: 50%;
+}
 
 .footer {
   background-color: #f4f5f7;
@@ -110,6 +144,10 @@
   background-color: #03c4a1;
   color: #fff;
   border-radius: 0;
+}
+
+.text-title {
+  color: #03c4a1;
 }
 
 .partner {
