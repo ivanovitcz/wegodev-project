@@ -50,79 +50,10 @@
             </div>
           </div>
         </div>
-        
       </div>
-
-      <div class="section py-2">
-        <div class="container">
-          <div class="row pt-5">
-            <div class="col-md-8 mx-auto text-center my-5 mb-3">
-              <h6 class="text-secondary font-weight-bold">Some of Our Happy Clients</h6>
-              <div class="row justify-content-center">
-                <div class="col-10 col-md-5 text-center">
-                  <div class="card partner p-5">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/251px-Google_2015_logo.svg.png" class="img-fluid floating happy" alt="image">
-                  </div>
-                </div>
-                <div class="col-10 col-md-5 text-center">
-                  <div class="card partner p-5">
-                    <img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg" class="img-fluid floating happy" alt="image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="section py-5">
-        <div class="container">
-          <h3 class="mb-4 sub-spacing text-capitalized ">Service</h3>
-          <div class="row justify-content-center mt-3">
-            <div class="col-md-3  mt-4 mt-md-0">
-              <div class="card about-card contact p-4">
-                <i class="fa fa-dollar fa-2x text-service"></i>
-                <h5 class="text-service mt-3">Digital Market Consulting</h5>
-                <p class=" my-2 text-muted">
-                  Fill up the form and our team will get back to you within 24 hours
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 mt-4 mt-md-0">
-              <div class="card about-card contact p-4">
-                <i class="fa fa-area-chart fa-2x text-service"></i>
-                <h5 class="text-service mt-3">Analyze Business Problems</h5>
-                <p class=" my-2 text-muted">
-                  Fill up the form and our team will get back to you within 24 hours
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 mt-4 mt-md-0">
-              <div class="card about-card contact p-4">
-                <i class="fa fa-cogs fa-2x text-service"></i>
-                <h5 class="text-service mt-3">IT Problem Consulting</h5>
-                &nbsp;
-                <p class=" my-2 text-muted">
-                  Fill up the form and our team will get back to you within 24 hours
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 mt-4 mt-md-0">
-              <div class="card about-card contact p-4">
-                <i class="fa fa-code fa-2x text-service"></i>
-                <h5 class="text-service mt-3">Creating Software for Your Business</h5>
-                <p class=" my-2 text-muted">
-                  Fill up the form and our team will get back to you within 24 hours
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="section bg-light py-5">
         <div class="container">
-          <h3 class="mb-4 sub-spacing text-capitalized ">Our Work</h3>
           <div class="row row-grid align-items-center mt-2">
             <div class="col-md-6 order-md-2 pt-0 pt-md-5 mb-5 px-4 px-md-5">
               <img src="https://ivanovitcz.github.io/assets/img/desa/user.png" class="img-fluid floating" alt="image">
@@ -244,7 +175,14 @@
 
 
     <script>
-    
+      document.addEventListener('scroll', function (e) {
+        var top  = window.pageYOffset + window.innerHeight,
+            isVisible = top > document.querySelector('.intro').offsetTop;
+
+        if (isVisible) {
+          document.getElementById('testing').classList.add('animate__slideInUp');
+        }
+      });
     </script>
   </body>
 </html>

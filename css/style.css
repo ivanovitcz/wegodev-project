@@ -222,6 +222,10 @@
   color: #03c4a1;
 }
 
+.text-service {
+  color: #4facfe;
+}
+
 .partner {
   border: 0;
 }
@@ -235,3 +239,12 @@
   border-radius: 0;
   border-bottom: 1px solid #4facfe;
 }
+
+.happy {
+  filter: grayscale(100%);
+}
+
+.happy:hover {
+  filter: none;
+}
+
