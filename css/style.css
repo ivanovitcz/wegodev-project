@@ -211,6 +211,13 @@
   border: 1px solid #03c4a1;
 }
 
+.btn-demo-disabled {
+  background-color: #fff;
+  color: #03c4a16e;
+  border-radius: 0;
+  border: 1px solid #03c4a16e;
+}
+
 .text-title {
   color: #03c4a1;
 }
